@@ -1,0 +1,69 @@
+* {
+    color: #340069;
+}
+.sect1 {
+    padding-top: 3rem;
+}
+h1 {
+    font-weight: bold;
+}
+.sect2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.sectbody {
+    padding-top: 5rem;
+    width: 40%;
+}
+.btns {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+button {
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+.btnsign {
+    background-color: #340069;
+    color: white;
+    padding: 1.5rem 0.5rem;
+    margin-right: 3rem;
+}
+.btnjoin {
+    background-color: #d8d9d9;
+    padding: 1rem 0.5rem;
+}
+.imgsect {
+    padding-right: 2rem;
+    width: 60%;
+}
+.imgdesc {
+    width: 100%;
+    height: 75%;
+}
+.innersect {
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+.innersect p {
+    color: black;
+}
+.innersect span {
+    color: #340069;
+}
+.socialsect {
+    display: flex;
+    align-items: center;
+}
+.imgmail {
+    margin-right: 1rem;
+}
+.bi {
+    font-size: 35px;
+    margin-right: 1rem;
+}
+.bi-twitter {
+    color: #01a9f4;
+}
