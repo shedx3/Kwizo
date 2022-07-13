@@ -10,13 +10,14 @@ hr {
 .btn {
     background-color: #340069;
     color: white;
-    padding: 0.25rem 1.5rem;
+    padding: 0.5rem 8rem;
+    border-radius: 90rem;
 }
 .navspace {
     justify-content: center;
 }
 .nav-item {
-    margin-left: 11.5rem;
+    margin-left: 9.5rem;
     /* margin-right: 5rem; */
     font-weight: bold;
 }

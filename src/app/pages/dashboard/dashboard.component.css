@@ -15,10 +15,12 @@ h1 {
 .sectbody {
     padding-top: 5rem;
     width: 40%;
+    
 }
 .btns {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    /* padding-left: 0.5rem;
+    padding-right: 3.5rem; */
+    justify-content: space-between;
 }
 button {
     border: none;
@@ -29,11 +31,12 @@ button {
     background-color: #340069;
     color: white;
     padding: 1.5rem 0.5rem;
-    margin-right: 3rem;
+    
 }
 .btnjoin {
     background-color: #d8d9d9;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem ;
+    
 }
 .imgsect {
     padding-right: 2rem;
@@ -45,7 +48,8 @@ button {
 }
 .innersect {
     padding-top: 3rem;
-    padding-left: 3rem;
+    /* padding-left: 4rem; */
+    padding-right: 9rem;
 }
 .innersect p {
     color: black;
