@@ -1,0 +1,13 @@
+.logo {
+  width: 100px;
+}
+.scoreboard-item {
+  color: #700cb3;
+}
+.scoreboard-item:hover {
+  background-color: #700cb3;
+  color: white;
+  transform: scale(1.01);
+
+  transition: ease-in-out 0.2s;
+}
