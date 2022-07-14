@@ -4,7 +4,7 @@ import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { PreviewComponent } from './preview/preview.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full' },
+  { path: '', redirectTo: 'leaderboard', pathMatch: 'full' },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: 'preview', component: PreviewComponent },
 ];
