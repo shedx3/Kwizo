@@ -6,75 +6,78 @@ header {
 
 }
 
+.container1{
+    display: flex;
+}
+
 form {
     border: 2px solid  #700CB3;
-    position: relative;
-    left: 100px;
-    top: 70px;
-    width: 400px;
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 430px;
     border-radius: 20px;
 }
 
 h2 {
     padding-top: 20px;
-    padding-left: 40px;
+    padding-left: 60px;
 }
 
 p {
     margin-top: -10px;
-    padding-left: 40px;
+    padding-left: 60px;
 }
 
 .firstname {
-    margin-left: 40px;
-    width: 300px;
-    height: 20px;
-    border-radius: 5px;
+    margin-left: 60px;
+    min-width: 280px;
+    height: 30px;
+    border-radius: 3px;
     padding-left: 10px;
     border: 1px solid  #700CB3;
 }
 
 .lastname {
-    margin-left: 40px;
-    width: 300px;
-    height: 20px;
-    border-radius: 5px;
+    margin-left: 60px;
+    min-width: 280px;
+    height: 30px;
+    border-radius: 3px;
     padding-left: 10px;
     border: 1px solid  #700CB3;
 }
 
 .username {
-    margin-left: 40px;
-    width: 300px;
-    height: 20px;
-    border-radius: 5px;
+    margin-left: 60px;
+    min-width: 280px;
+    height: 30px;
+    border-radius: 3px;
     padding-left: 10px;
     border: 1px solid  #700CB3;
 }
 
 .email {
-    margin-left: 40px;
-    width: 300px;
-    height: 20px;
-    border-radius: 5px;
+    margin-left: 60px;
+    min-width: 280px;
+    height: 30px;
+    border-radius: 3px;
     padding-left: 10px;
     border: 1px solid  #700CB3;
 }
 
 .password {
-    margin-left: 40px;
-    width: 300px;
-    height: 20px;
-    border-radius: 5px;
+    margin-left: 60px;
+    min-width: 280px;
+    height: 30px;
+    border-radius: 3px;
     padding-left: 10px;
     border: 1px solid  #700CB3;
 }
 
 .cpassword {
-    margin-left: 40px;
-    width: 300px;
-    height: 20px;
-    border-radius: 5px;
+    margin-left: 60px;
+    min-width: 280px;
+    height: 30px;
+    border-radius: 3px;
     padding-left: 10px;
     border: 1px solid  #700CB3;
 }
@@ -82,43 +85,37 @@ p {
 .submit {
     color: white;
     background-color:  black;
-    margin-left: 40px;
+    margin-left: 60px;
     border-radius: 3px;
     margin-bottom: 10px;
 
 }
 
-.googleimage {
-    width: 10%;
-    height: 5%;
+.googleimage1 {
+    width: 15%;
+    height: 10%;
     position: relative;
-    z-index: 1;
-    top: 0px;
-    left: 40px;
+    top: -2px;
+    right: 280px;
 
 }
 
 .googlebutton {
-    
-    margin-bottom: 5px;
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-    right: 10px;
+    width: 280px;
+    border-radius: 3px;
+    margin-left: 60px;
     background-color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     text-align: center;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 17px;
     border: 1px solid  #700CB3;
 }
 
 .signupimg {
-    width: 600px;
-    height: 400px;
-    position: relative;
-    bottom: 380px;
-    left: 650px;
-    margin-bottom: -300px;
+    width: 95%;
+    height: 80%;
+    margin-top: 70px;
+    margin-left: 10px;
 }

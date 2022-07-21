@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { JoingameComponent } from './joingame/joingame.component';
+import { AccountComponent } from './account/account.component';
 
 
 @NgModule({
@@ -12,6 +14,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     AppComponent,
     LogInComponent,
     SignUpComponent,
+    JoingameComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

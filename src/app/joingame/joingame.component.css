@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+header {
+    width: 1300px;
+    height: 40px;
+    /*border-bottom: 1px solid #700CB3;*/
+    margin-left: 25px;
+    /*background: #700CB3;*/
+    
+}
+
+.gameContainer {
+    display: flex;
+}
+
+.gameForm {
+    /*position: absolute;*/
+    width: 400px;
+    height: 300px;
+    margin-left: 90px;
+    margin-top: 150px;
+    /*box-shadow: 2px 2px 2px #700CB3;*/
+    border: 3px double #700CB3;
+    background: white;
+    border-radius: 18px;
+
+}
+
+.gamepin {
+    /*position: absolute;*/
+    width: 350px;
+    height: 44px;
+    margin-left: 21px;
+    margin-top: 55px;
+    background: #FBF7F7;
+    border-radius: 18px;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #700CB3;
+}
+
+.username {
+    /*position: absolute;*/
+    width: 350px;
+    height: 44px;
+    margin-left: 21px;
+    margin-top: 25px;
+    background: #FBF7F7;
+    border-radius: 18px;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    border: 1px solid #700CB3;
+}
+
+.joingame {
+    /*position: absolute;*/
+    width: 150px;
+    height: 30px;
+    margin-left: 125px;
+    margin-top: 15px;
+    background: #FBF7F7;
+    border-radius: 18px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    background: #1C0325;
+}
+
+.joinpic {
+    margin-top: 30px;
+    margin-left: 80px;
+}
