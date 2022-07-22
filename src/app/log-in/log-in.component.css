@@ -26,8 +26,8 @@ p {
 }
 
 form {
-  margin-top: 70px;
-  margin-left: 100px;
+  margin-top: 100px;
+  margin-left: 50px;
   width: 400px;
   height: 390px;
   border: 2px solid #700cb3;
@@ -103,9 +103,9 @@ input .username:hover {
   border-radius: 12px;
 }
 .loginimg {
-  width: 90%;
-  height: 70%;
-  margin-top: 40px;
-  margin-left: 90px;
+  width: 110%;
+  height: 80%;
+  margin-top: 90px;
+  margin-left: 70px;
   /*margin-bottom: -300px;*/
 }

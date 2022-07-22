@@ -8,31 +8,18 @@
       <p class="uname">Username</p>
       <input type="text" class="username" name="username" placeholder="" />
       <p class="pword">Password</p>
-      <input
-        type="password"
-        class="password"
-        name="password"
-        placeholder=""
-      /><br />
+      <input type="password" class="password" name="password" placeholder="" /><br />
       <input class="submit" type="submit" value="submit" /><br />
       <p><span>or</span></p>
 
-      <button class="googlebutton">
+      <button class="googlebutton" routerLink="/account">
         <span style="font-size: 17px">Continue with Google</span>
       </button>
-      <p>Don't have an account? <span>Sign up now!</span></p>
-      <img
-        class="googleimage"
-        src="../../assets/Images/google.png"
-        alt="google"
-      />
+      <p>Don't have an account? <span><a routerLink="/signup">Sign up now!</a></span></p>
+      <img class="googleimage" src="../../assets/Images/google.png" alt="google" />
     </form>
   </div>
   <div>
-    <img
-      class="loginimg"
-      src="../../assets/Images/logincorrected.png"
-      alt="login"
-    />
+    <img class="loginimg" src="../../assets/Images/logincorrected.png" alt="login" />
   </div>
 </div>

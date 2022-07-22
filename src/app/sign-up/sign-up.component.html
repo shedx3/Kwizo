@@ -1,22 +1,24 @@
 <header>
   <h1>Kwizzo</h1>
 </header>
-<form>
-  <h2>Sign-up</h2>
-  <p>Please fill this form to create an account</p>
-  <input type="text" class="firstname" placeholder="Firstname" /><br /><br />
-  <input type="text" class="lastname" placeholder="Lastname" /><br /><br />
-  <input type="text" class="username" placeholder="Username" /><br /><br />
-  <input type="email" class="email" placeholder="E-mail" /><br /><br />
-  <input type="password" class="password" placeholder="Password" /><br /><br />
-  <input
-    type="password"
-    class="cpassword"
-    placeholder="Confirm Password"
-  /><br /><br />
-  <input type="submit" class="submit" value="Submit" />
-  <p><span style="position: relative; left: 150px">or</span></p>
-  <button class="googlebutton"><span>Sign up with Google</span></button>
-  <img class="googleimage" src="./assets/Images/google.png" alt="google" ; />
-</form>
-<img class="signupimg" src="./assets/Images/sign-upagain.png" alt="signup" />
+<div class="container1">
+  <div>
+    <form>
+      <h2>Sign-up</h2>
+      <p>Please fill this form to create an account</p>
+      <input type="text" class="firstname" placeholder="Firstname" /><br /><br />
+      <input type="text" class="lastname" placeholder="Lastname" /><br /><br />
+      <input type="text" class="username" placeholder="Username" /><br /><br />
+      <input type="email" class="email" placeholder="E-mail" /><br /><br />
+      <input type="password" class="password" placeholder="Password" /><br /><br />
+      <input type="password" class="cpassword" placeholder="Confirm Password" /><br /><br />
+      <a routerLink="/account"><input type="submit" class="submit" value="Submit" /></a>
+      <p><span style="position: relative; left: 150px">or</span></p>
+      <button class="googlebutton"><span>Sign up with Google</span></button>
+      <img class="googleimage1" src="./assets/Images/google.png" alt="google" />
+    </form>
+  </div>
+  <div>
+    <img class="signupimg" src="../../assets/Images/sign-upagain.png" alt="signup" />
+  </div>
+</div>
