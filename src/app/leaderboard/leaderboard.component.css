@@ -11,3 +11,10 @@
 
   transition: ease-in-out 0.2s;
 }
+img {
+  margin-bottom: 20px;
+}
+
+.container {
+  height: 400px;
+}
