@@ -108,3 +108,7 @@ li a:hover {
 .jq {
     text-align: center;
 }
+
+button:hover {
+    background: #9e85af;
+}
