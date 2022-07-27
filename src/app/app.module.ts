@@ -9,6 +9,8 @@ import { JoingameComponent } from './joingame/joingame.component';
 import { AccountComponent } from './account/account.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { HomepageComponent } from './homepage/homepage.component';
+import { HeadersComponent } from './headers/headers.component';
 
 @NgModule({
   declarations: [
@@ -17,15 +19,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SignUpComponent,
     JoingameComponent,
     AccountComponent,
+    HomepageComponent,
+    HeadersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+   FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
 import { AccountComponent } from './account/account.component';
 import { JoingameComponent } from './joingame/joingame.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
@@ -8,22 +9,18 @@ import { PreviewComponent } from './preview/preview.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/user/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/homepage', pathMatch: 'full' },
+  { path: 'homepage', component: HomepageComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: 'preview', component: PreviewComponent },
-  { path: 'login', component: LogInComponent},
-  { path: 'signup', component: SignUpComponent},
-  { path: 'account', component: AccountComponent},
-  { path: 'joingame', component: JoingameComponent},
-  {
-    path: 'user',
-    loadChildren: () =>
-      import('./pages/pages.module').then((m) => m.PagesModule),
-  },
+  { path: 'login', component: LogInComponent },
+  { path: 'signup', component: SignUpComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'joingame', component: JoingameComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
