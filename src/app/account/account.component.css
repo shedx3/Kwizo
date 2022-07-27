@@ -10,14 +10,14 @@ header {
 
 .container {
     border: none;
-    background-color: #582679;
+    border: 1px solid black;
     display: inline-block;
     position: relative;
     margin-top: 60px;
-    margin-left: 40px;
+    margin-left: 200px;
     border-radius: 15px;
-    height: 270px;
-    width: 620px;
+    height: 400px;
+    width: 800px;
 }
 
 p {
@@ -73,6 +73,7 @@ p {
     bottom: 10px;
     border-radius: 5px;
     border: none;
+    background-color: #582679;
 }
 
 .createbutton {
@@ -83,6 +84,7 @@ p {
     bottom: 10px;
     border-radius: 5px;
     border: none;
+    background-color: #582679;
 }
 
 .attemptbutton {
@@ -93,6 +95,7 @@ p {
     bottom: 10px;
     border-radius: 5px;
     border: none;
+    background-color: #582679;
 }
 
 .image {

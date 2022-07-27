@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
   
-header {
+.header {
     width: 1300px;
-    height: 40px;
-    /*border-bottom: 1px solid #700CB3;*/
+    height: 70px;
+    border-bottom: 1px solid #700CB3;
     margin-left: 25px;
     /*background: #700CB3;*/
     
+}
+
+.logo {
+    position: relative;
+    top:-20px;
+    width:10%;
+    margin-left: 25px;
 }
 
 .gameContainer {

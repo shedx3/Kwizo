@@ -1,27 +1,27 @@
 <body>
-  <header>
-    <h1>Kwizzo</h1>
-  </header>
+  <div class="header">
+    <img class="logo" src="../../assets/logo.png" alt="logo"><br>
+</div>
   <div class="container">
     <div>
-      <form >
+      <form [formGroup]="login">
         <h2>Log in</h2>
         <p class="uname">Username</p>
-        <input type="text" class="username" name="username" placeholder="" />
+        <input type="text" class="username" name="username" placeholder="" formControlName="username"/>
         <p class="pword">Password</p>
         <input
           type="password"
           class="password"
           name="password"
           placeholder=""
-        /><br />
-        <input class="submit" type="submit" value="submit" /><br />
+        formControlName="password"/><br />
+        <input (click)="loginSubmit(login.value)" [disabled]="login.invalid" class="submit" type="submit" value="submit" /><br />
         <p><span>or</span></p>
 
         <button class="googlebutton">
           <span style="font-size: 17px">Continue with Google</span>
         </button>
-        <p>Don't have an account? <span><a routerLink="/signup">Sign up now!</a></span></p>
+        <p class="extra">Don't have an account? <span class="signup" (click)="goToSignup()">Sign up now!</span></p>
         <img
         class="googleimage"
         src="../../assets/Images/google.png"

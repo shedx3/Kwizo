@@ -1,7 +1,15 @@
-header {
+
+.header {
     width: 1300px;
-    height: 40px;
+    height: 70px;
     border-bottom: 1px solid #700CB3;
+    margin-left: 25px;
+}
+
+.logo {
+    position: relative;
+    top:-20px;
+    width:10%;
     margin-left: 25px;
 }
 .container{
@@ -12,7 +20,7 @@ h2 {
     font-size: 30px;
     text-align: center;
     padding-top: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 p {
@@ -35,7 +43,7 @@ form {
     font-size: 20px;
     text-align: left;
     padding-left: 45px;
-    padding-top: 20px;
+    padding-top: 17px;
     margin-bottom: 5px;
 }
 
@@ -43,6 +51,7 @@ form {
     width: 300px;
     margin-left: 45px;
     padding-top: 10px;
+    padding-left: 15px;
     border: 1px solid  #700CB3;
     border-radius: 6px;
     font-size: 20px;
@@ -62,7 +71,8 @@ input .username:hover{
 .password {
     width: 300px;
     margin-left: 45px;
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
     border: 1px solid  #700CB3;
     border-radius: 6px;
     font-size: 20px;
@@ -77,13 +87,20 @@ input .username:hover{
     border-radius: 6px;
 }
 
+.submit:disabled{
+    background-color: gray;
+    opacity:0.9;
+    color: black;
+    cursor: not-allowed;
+}
+
 .googleimage {
-    width: 10%;
-    height: 5%;
+    width: 20%;
+    height: 10%;
     z-index: 1;
     position: relative;
-    bottom: 83px;
-    left: 60px;
+    bottom: 105px;
+    left: 40px;
 }
 
 .googlebutton {
@@ -98,10 +115,19 @@ input .username:hover{
     text-align: center;
     border-radius: 12px;
 }
+.extra {
+    margin-top: 18px;
+}
+
 .loginimg {
     width: 110%;
     height: 80%;
     margin-top: 90px;
     margin-left: 70px;
     /*margin-bottom: -300px;*/
+}
+
+.signup{
+    color: blue;
+    cursor: pointer;
 }
