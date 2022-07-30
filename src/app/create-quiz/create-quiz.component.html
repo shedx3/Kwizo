@@ -1,0 +1,48 @@
+<div class="wrapper">
+
+    <div class="navbar">
+            
+                <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
+            
+            <div class="nav2">
+                <button class="exit">Exit</button><br>
+                <button class="save">Save</button>
+            </div>
+    </div>
+
+    <div class="mainbody">
+        <div class="quizcontainer">
+            <textarea  class="question"  placeholder="Enter your question" rows="3"></textarea>
+        
+        <div class="option1">
+            <button class="button1">A</button>
+            <button class="button2">B</button>
+        </div>
+        <div class="option2">
+            <button class="button3">C</button>
+            <button class="button4">D</button>
+        </div>
+        </div>
+
+        <div class="rightside-bar">
+            <p>Time limit:</p>
+            <select class="timer" name="" id="">
+                <option value="" selected>select time limit</option>
+                <option value="">5 seconds</option>
+                <option value="">10 seconds</option>
+                <option value="">20 seconds</option>
+                <option value="">30 seconds</option>
+                <option value="">1 minute</option>
+                <option value="">1 minute 30 seconds</option>
+                <option value="">2 minutes</option>
+                <option value="">5 minutes</option>
+                <option value="">10 minutes</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <div class="endbuttons">
+        <button class="deletequestion">Delete</button>
+        <button class="addquestion">Add Question</button>
+    </div>
+</div>

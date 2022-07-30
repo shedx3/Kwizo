@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { HomepageComponent } from './homepage/homepage.component';
 import { HeadersComponent } from './headers/headers.component';
+import { CreateQuizComponent } from './create-quiz/create-quiz.component';
+import { PlayDemoComponent } from './play-demo/play-demo.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HeadersComponent } from './headers/headers.component';
     JoingameComponent,
     AccountComponent,
     HomepageComponent,
-    HeadersComponent
+    HeadersComponent,
+    CreateQuizComponent,
+    PlayDemoComponent
   ],
   imports: [
     BrowserModule,

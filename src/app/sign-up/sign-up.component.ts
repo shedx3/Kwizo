@@ -25,4 +25,8 @@ export class SignUpComponent implements OnInit {
   signupSubmit(data:any){
     console.log(data)   
   }
+
+  goToHome(){
+    this.router.navigate(['homepage'])
+  }
   }

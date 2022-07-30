@@ -1,5 +1,5 @@
 <div class="header">
-  <img class="logo" src="../../assets/logo.png" alt="logo">
+  <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
 </div>
 <div class="container1">
 <div>
@@ -15,7 +15,7 @@
     class="cpassword"
     placeholder="Confirm Password"
     formControlName="confirmpassword"/><br /><br />
- <input (click)="signupSubmit(signup.value)" [disabled]="signup.invalid" type="submit" class="submit" value="Submit" />
+ <input (click)="signupSubmit(signup.value)" [disabled]="signup.invalid" type="submit" class="submit" value="SIGN UP" />
   <p><span style="position: relative; left: 150px">or</span></p>
   <button class="googlebutton"><span>Sign up with Google</span></button>
   <img

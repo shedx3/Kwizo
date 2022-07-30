@@ -1,22 +1,20 @@
 <nav>
     <ul>
-        <img class="logo" src="../../assets/logo-removebg-preview.png" alt="logo"><br>
-        <div ><li><a  class="hm" href="Home"><img class="icon1" src="../../assets/Images/homeee-removebg-preview.png" alt="homee" width="25%" height="10%"> Home</a></li></div>
-        <div ><li> <a class="ps" href="Profilesettings"><img class="icon2" src="../../assets/Images/settings-removebg-preview.png" alt="settings" width="28%" height="3%">Profile settings</a></li></div>
-        <div ><li> <a href="History"><img class="icon3" src="../../assets/Images/history-removebg-preview.png" alt="history" width="13%" height="12%"> &nbsp;&nbsp; History</a></li></div>
+        <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo"><br>
+        <div ><li (click)="goToHome()"><a  class="hm" href="Home"><img class="icon1" src="../../assets/Images/homeee-removebg-preview.png" alt="homee" width="25%" height="10%"> Home</a></li></div>
     </ul>
 </nav>
 
 <div class="innerbody">
-    <div class="minicontainer1"><button> 
+    <div class="minicontainer1"><button (click)="goToPdemo()"> 
         <img class="demo" src= "../../assets/Images/playdemo.png" alt="demo">
         <span class="pd"><p>Play Demo</p></span></button>
     </div>
-    <div class="minicontainer2"><button>
+    <div class="minicontainer2"><button (click)="goToCquiz()" >
         <img class="createquiz" src="../../assets/Images/createquizagain.png" alt="create quiz">
         <span class="cq"><p>Create Quiz</p></span></button>
     </div>
-    <div class="minicontainer3"><button>
+    <div class="minicontainer3"><button (click)="goToJoinGame()">
         <img class="joinquiz" src="../../assets/Images/joinquiz.png" alt="join game">
         <span class="jq"><p>Join Quiz</p></span></button>
     </div>
