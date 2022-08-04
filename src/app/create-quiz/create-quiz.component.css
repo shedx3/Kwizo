@@ -142,9 +142,9 @@ li {
   padding-left: 2px;
 }
 li .card:hover {
-  border: 1px solid white;
-  background-color: #700cb3;
+  border: 2px solid white;
   color: white;
+  font-weight: 600;
 }
 ol {
   padding: 0px;
@@ -158,4 +158,17 @@ ol {
   background-color: rgb(201, 199, 199);
   height: 250px;
   width: 70vw;
+}
+
+#A {
+  background-color: red;
+}
+#B {
+  background-color: blue;
+}
+#C {
+  background-color: yellow;
+}
+#D {
+  background-color: green;
 }
