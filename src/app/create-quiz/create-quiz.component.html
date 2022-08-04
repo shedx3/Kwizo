@@ -1,48 +1,146 @@
-<div class="wrapper">
+<div class="container-fluid">
+    <div class="wrapper">
 
-    <div class="navbar">
-            
-                <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
-            
-            <div class="nav2">
-                <button class="exit">Exit</button><br>
-                <button class="save">Save</button>
+        <div class="navbar">
+
+            <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
+
+
+        </div>
+
+        <div class="mainbody">
+
+
+            <div class="row">
+
+                <div class="col-sm-10">
+                    <form action="" [formGroup]="questionForm" (ngSubmit)="onSubmit()">
+                        <div class="quizcontainer">
+                            <input type="text" class="question" formControlName="question" id="question"
+                                placeholder="Enter your question">
+
+                            <div class="answers">
+
+                                <div class="option">
+                                    <input type="text" formControlName="optionA" class="form-control"
+                                        placeholder="Option A">
+                                </div>
+
+                                <div class="option">
+                                    <input type="text" formControlName="optionB" class="form-control"
+                                        placeholder="Option B">
+                                </div>
+                                <div class="option">
+                                    <input type="text" formControlName="optionC" class="form-control"
+                                        placeholder="Option C">
+                                </div>
+                                <div class="option">
+                                    <input type="text" formControlName="optionD" class="form-control"
+                                        placeholder="Option D">
+                                </div>
+                                <div class="option" id="correct">
+                                    <input type="text" formControlName="correct" class="form-control"
+                                        placeholder="correct">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <br>
+                        <div class="endbuttons">
+                            <!-- <button class="deletequestion">Delete</button> -->
+                            <button class="addquestion">Add Question</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-2">
+                    <div class="nav2">
+                        <button class="exit">Exit</button><br>
+                        <button class="save">Save</button>
+                    </div>
+                    <div class="rightside-bar">
+
+                        <p>Time limit:</p>
+                        <select class="timer" name="" id="">
+                            <option value="" selected>select time limit</option>
+                            <option value="">5 seconds</option>
+                            <option value="">10 seconds</option>
+                            <option value="">20 seconds</option>
+                            <option value="">30 seconds</option>
+                            <option value="">60 seconds</option>
+
+                        </select>
+                    </div>
+                </div>
             </div>
-    </div>
-
-    <div class="mainbody">
-        <div class="quizcontainer">
-            <textarea  class="question"  placeholder="Enter your question" rows="3"></textarea>
-        
-        <div class="option1">
-            <button class="button1">A</button>
-            <button class="button2">B</button>
-        </div>
-        <div class="option2">
-            <button class="button3">C</button>
-            <button class="button4">D</button>
-        </div>
         </div>
 
-        <div class="rightside-bar">
-            <p>Time limit:</p>
-            <select class="timer" name="" id="">
-                <option value="" selected>select time limit</option>
-                <option value="">5 seconds</option>
-                <option value="">10 seconds</option>
-                <option value="">20 seconds</option>
-                <option value="">30 seconds</option>
-                <option value="">1 minute</option>
-                <option value="">1 minute 30 seconds</option>
-                <option value="">2 minutes</option>
-                <option value="">5 minutes</option>
-                <option value="">10 minutes</option>
-            </select>
+
+        <!-- <div class="mainbody" *ngFor="let question of saveQuestion;">
+            <div class="row">
+
+                <div class="col-sm-10">
+
+                    <div class="quizcontainer">
+                        <button> {{ question.question }}</button>
+
+                        <div class="answers">
+
+
+                            <div class="option">
+                                <button type="text"> {{ question.optionA }}</button>
+                            </div>
+                            <div class="option">
+                                <button> {{ question.optionB }}</button>
+                            </div>
+                            <div class="option">
+                                <button> {{ question.optionC }}</button>
+                            </div>
+                            <div class="option">
+                                <button> {{ question.optionD }}</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+        <div class="row " *ngFor="let question of saveQuestion;">
+            <div class="col-sm-10 output">
+
+                <div class="question-output">
+                    <div class="card quest" id="output">
+                        <h3>{{question.question}}</h3>
+                    </div>
+                </div>
+                <div class="options-output">
+                    <ol>
+                        <li>
+                            <div class="card" id="A">
+                                {{question.optionA}}
+                            </div>
+                        <li>
+                            <div class="card" id="B">
+                                {{question.optionB}}
+                            </div>
+                        <li>
+                            <div class="card" id="C">
+                                {{question.optionC}}
+                            </div>
+                        <li>
+                            <div class="card" id="D">
+                                {{question.optionD}}
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
         </div>
-    </div>
-    <br>
-    <div class="endbuttons">
-        <button class="deletequestion">Delete</button>
-        <button class="addquestion">Add Question</button>
+
     </div>
 </div>
