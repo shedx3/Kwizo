@@ -27,6 +27,10 @@ export class LogInComponent implements OnInit {
     this.router.navigate(['signup'])
   }
 
+  goToAccount(){
+    this.router.navigate(['account'])
+  }
+
   goToHome(){
     this.router.navigate(['homepage'])
   }

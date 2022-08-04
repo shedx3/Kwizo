@@ -33,4 +33,8 @@ export class SignUpComponent implements OnInit {
   goToLogin(){
     this.router.navigate(['login'])
   }
+
+  goToAccount(){
+    this.router.navigate(['account'])
+  }
   }

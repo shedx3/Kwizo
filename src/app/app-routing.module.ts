@@ -13,6 +13,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
+  { path:'', pathMatch: 'full', redirectTo: '/homepage'},
   { path: 'homepage', component: HomepageComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
   { path: 'preview', component: PreviewComponent },

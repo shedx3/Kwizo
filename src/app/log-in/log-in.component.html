@@ -15,7 +15,9 @@
           name="password"
           placeholder=""
         formControlName="password"/><br />
-        <input (click)="loginSubmit(login.value)" [disabled]="login.invalid" class="submit" type="submit" value="LOGIN" routerlink="/account"/><br />
+        <input (click)="loginSubmit(login.value)" [disabled]="login.invalid" 
+        (click)="goToAccount()"
+        class="submit" type="submit" value="LOGIN" routerlink="/account"/><br />
         <p><span>or</span></p>
 
         <button class="googlebutton">
