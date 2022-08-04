@@ -119,6 +119,16 @@ p {
     border: 1px solid  #700CB3;
 }
 
+.extra {
+    margin-left: 95px;
+    margin-top: 5px;
+}
+
+.login{
+    color: blue;
+    cursor: pointer;
+}
+
 .signupimg {
     width: 95%;
     height: 80%;

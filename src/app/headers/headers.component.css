@@ -1,6 +1,7 @@
 * {
   color: #700cb3;
 }
+
 .navbar-brand {
   padding-left: 0.75rem;
 }
@@ -27,15 +28,16 @@ hr {
   box-shadow: 0px 6px 20px #700cb391;
 }
 .logo {
+  height: 85%;
   width: 100px;
 }
 
-.nav-links {
+/*.nav-link {
   display: flex;
   align-items: center;
   list-style: none;
   color: black;
-}
+}*/
 
 ul:hover a {
   filter: blur(1px);
@@ -52,6 +54,9 @@ li a :active {
   background-color: #700cb3;
   color: white;
   border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
 }
 
 @media (max-width: 992px) {

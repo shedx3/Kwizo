@@ -15,7 +15,7 @@
     class="cpassword"
     placeholder="Confirm Password"
     formControlName="confirmpassword"/><br /><br />
- <input (click)="signupSubmit(signup.value)" [disabled]="signup.invalid" type="submit" class="submit" value="SIGN UP" />
+ <input (click)="signupSubmit(signup.value)" [disabled]="signup.invalid" type="submit" class="submit" value="SIGN UP" routerlink="/account" />
   <p><span style="position: relative; left: 150px">or</span></p>
   <button class="googlebutton"><span>Sign up with Google</span></button>
   <img
@@ -24,6 +24,7 @@
     alt="google"
   />
 </form>
+<p class="extra">Already have an account? <span class="login" (click)="goToLogin()">Log in!</span></p>
 </div>
 <div>
 <img

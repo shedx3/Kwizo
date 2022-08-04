@@ -13,6 +13,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { HeadersComponent } from './headers/headers.component';
 import { CreateQuizComponent } from './create-quiz/create-quiz.component';
 import { PlayDemoComponent } from './play-demo/play-demo.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { PlayDemoComponent } from './play-demo/play-demo.component';
     HomepageComponent,
     HeadersComponent,
     CreateQuizComponent,
-    PlayDemoComponent
+    PlayDemoComponent,
+    AboutusComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

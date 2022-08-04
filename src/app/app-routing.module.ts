@@ -9,6 +9,8 @@ import { PreviewComponent } from './preview/preview.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { CreateQuizComponent } from './create-quiz/create-quiz.component';
 import { PlayDemoComponent } from './play-demo/play-demo.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/homepage', pathMatch: 'full' },
@@ -20,7 +22,9 @@ const routes: Routes = [
   { path: 'account', component: AccountComponent },
   { path: 'joingame', component: JoingameComponent },
   { path: 'createquiz', component: CreateQuizComponent},
-  { path: 'playdemo', component: PlayDemoComponent}
+  { path: 'playdemo', component: PlayDemoComponent},
+  { path: 'aboutus', component:AboutusComponent},
+  { path: 'footer', component:FooterComponent}
 ];
 
 @NgModule({
