@@ -19,13 +19,13 @@
 form {
     border: 2px solid  #700CB3;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 90px;
     width: 430px;
     border-radius: 20px;
 }
 
 h2 {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 60px;
 }
 
@@ -85,9 +85,7 @@ p {
     background-color:  black;
     margin-left: 60px;
     border-radius: 3px;
-    margin-bottom: 10px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    margin-bottom: 18px;
 }
 
 .submit:disabled{
@@ -97,30 +95,8 @@ p {
     cursor: not-allowed;
 }
 
-.googleimage1 {
-    width: 15%;
-    height: 10%;
-    position: relative;
-    top: -2px;
-    right: 280px;
-
-}
-
-.googlebutton {
-    width: 280px;
-    border-radius: 3px;
-    margin-left: 60px;
-    background-color: white;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 17px;
-    border: 1px solid  #700CB3;
-}
-
 .extra {
-    margin-left: 95px;
+    margin-left: 100px;
     margin-top: 5px;
 }
 
@@ -132,6 +108,6 @@ p {
 .signupimg {
     width: 95%;
     height: 80%;
-    margin-top: 60px;
-    margin-left: 10px;
+    margin-top: 35px;
+    margin-left: 7px;
 }

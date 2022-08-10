@@ -17,6 +17,7 @@
 .contact{
     font: arial;
     text-align: left;
+    margin-bottom: 7px;
 }
 
 .rightcontent{
@@ -37,10 +38,33 @@ padding: 10px 0px 10px 10px;
 width: 350px;
 }
 
+.socials{
+    display: inline-flex;
+    justify-content: space-between;
+    /*margin-top: -95px;
+    border: 1px solid white;*/
+    margin-left: -125px;
+}
+
+.gmail{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.twitter{
+    width: 30px;
+    height: 30px;
+}
+
 .copyright{
     color: white;
     text-align: center;
     margin-top: 10px;
     font: serif;
     padding-bottom: 10px;
+}
+
+button{
+    background: none;
 }

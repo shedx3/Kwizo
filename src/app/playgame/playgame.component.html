@@ -1,0 +1,44 @@
+<div class="wrapper">
+
+    <div class="navbar">
+
+        <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
+
+
+    </div>
+
+    <div class="mainbody">
+
+                <form>
+                    <div class="quizcontainer">
+                        <input type="text" class="question" formControlName="question" id="question">
+
+                        <div class="answers">
+                            <div class="firstoptions">
+                            <div class="option1">
+                                <input type="button" formControlName="optionA" class="form-control"
+                                    value="Option A">
+                            </div>
+
+                            <div class="option2">
+                                <input type="button" formControlName="optionB" class="form-control"
+                                    value="Option B">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="secondoptions">
+                            <div class="option3">
+                                <input type="button" formControlName="optionC" class="form-control"
+                                    value="Option C">
+                            </div>
+                            <div class="option4">
+                                <input type="button" formControlName="optionD" class="form-control"
+                                    value="Option D">
+                            </div>
+                        </div>
+                        </div>
+
+                    </div>
+                    </form>
+
+

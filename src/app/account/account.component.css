@@ -29,7 +29,22 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.socials{
+    display: inline-flex;
+}
+
+.twitter{
+    width: 30px;
+    height: 30px;
+    background: none;
+}
+
+.gmail{
+    width: 30px;
+    height: 30px;
+    background: none;
+}
+/*li a:hover {
     background-color: rgb(209, 202, 202);
     color: #700CB3;
 }
@@ -41,14 +56,14 @@ li a:hover {
 
 .icon2 {
     position: relative;
-    /*left: -5px;*/
+    left: -5px;
 }
 
 .icon3 {
     position: relative;
     left: 7px;
     bottom: 3px;
-}
+}*/
 
 .innerbody {
     /*border: 1px solid black;*/

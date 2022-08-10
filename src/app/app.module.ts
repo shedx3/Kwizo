@@ -15,6 +15,7 @@ import { CreateQuizComponent } from './create-quiz/create-quiz.component';
 import { PlayDemoComponent } from './play-demo/play-demo.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { FooterComponent } from './footer/footer.component';
+import { PlaygameComponent } from './playgame/playgame.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     CreateQuizComponent,
     PlayDemoComponent,
     AboutusComponent,
-    FooterComponent
+    FooterComponent,
+    PlaygameComponent
   ],
   imports: [
     BrowserModule,
