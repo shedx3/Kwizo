@@ -1,0 +1,213 @@
+/* * {
+  color: white;
+
+  color: #700cb3;
+}  */
+.sect1 {
+  padding-top: 1.5rem;
+  display: inline-block;
+  margin-left: -80px;
+  margin-top: 80px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.sect2 {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.sectbody {
+  padding-top: 5rem;
+  width: 40%;
+}
+.btns {
+  /* padding-left: 0.5rem;
+    padding-right: 3.5rem; 
+  margin-top: 100px;*/
+  justify-content: space-between;
+  display: inline-block;
+  margin-left: -80px;
+  position: relative;
+  bottom: 80px;
+}
+button {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btnsign {
+  background-color: #700cb3;
+  color: white;
+  padding: auto;
+}
+.btnjoin {
+  background-color: #d8d9d9;
+  padding: 1rem 0.5rem;
+}
+.imgsect {
+  padding-right: 2rem;
+  width: 55%;
+  margin-top: -170px;
+  padding-bottom: 0px;
+}
+.imgdesc {
+  width: 100%;
+  height: 80%;
+  margin-left: 140px;
+  
+}
+.innersect {
+  padding-top: 3rem;
+  /* padding-left: 4rem; */
+  padding-right: 9rem;
+}
+.innersect p {
+  color: black;
+}
+.innersect span {
+  color: #700cb3;
+}
+.socialsect {
+  display: flex;
+  align-items: center;
+}
+.imgmail {
+  margin-right: 1rem;
+}
+.bi {
+  font-size: 35px;
+  margin-right: 1rem;
+}
+.bi-twitter {
+  color: #01a9f4;
+}
+
+/* Infomation */
+.info {
+  background-color: rgba(224, 223, 223, 0.233);
+}
+.info-box {
+  display: flex;
+  align-items: center;
+}
+.info-box img {
+  width: 35px;
+  margin-right: 20px;
+}
+.info-box h4 {
+  font-style: italic;
+}
+.sec {
+  width: 650px;
+  height: 450px;
+  border-radius: 5px;
+  margin-left: 23%;
+}
+
+.start {
+  padding-top: 10px;
+}
+section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* about */
+
+/* Team */
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.team-member {
+  height: 80%;
+  width: 80%;
+  padding: 10px;
+  /* margin-bottom: auto; */
+  text-align: center;
+}
+
+.content h6 {
+  color: #700cb3;
+  font-style: italic;
+  /* margin: auto;  */
+}
+
+.intro h1 {
+  font-style: oblique;
+}
+
+.intro h4 {
+  color: #700cb3;
+}
+
+/* Testimonials */
+
+.head h4 {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  padding-bottom: 10px;
+}
+.head h1 {
+  text-align: center;
+  font-style: oblique;
+}
+
+.testimonial {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.testimonial h4 {
+  margin-top: 16px;
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.testimonial h6 {
+  color: green;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.testimonials button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#contact {
+  background-color: rgb(2, 2, 34);
+  color: white;
+  text-align: center;
+}
+#foot {
+  margin-top: 0px;
+  font-size: 23px;
+  font-style: oblique;
+}
+.line {
+  width: 80px;
+  height: 4px;
+  background-color: red;
+  margin: 16px auto 24px auto;
+  border-radius: 5px;
+}
+footer {
+  background-color: rgba(0, 0, 0, 0.788);
+  color: white;
+  text-align: center;
+}

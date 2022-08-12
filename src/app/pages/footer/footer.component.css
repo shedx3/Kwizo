@@ -1,0 +1,70 @@
+.cover{
+    background-color: black;
+    margin-bottom: -17px;
+}
+
+.secondarycover{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftcontent{
+    color: white;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.contact{
+    font: arial;
+    text-align: left;
+    margin-bottom: 7px;
+}
+
+.rightcontent{
+    color: white;
+    /*border: 1px solid brown;*/
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.newsletter{
+    margin-bottom: 20px;
+    font: serif;
+}
+
+.emailbox{
+margin-top: -10px;
+padding: 10px 0px 10px 10px;
+width: 350px;
+}
+
+.socials{
+    display: inline-flex;
+    justify-content: space-between;
+    /*margin-top: -95px;
+    border: 1px solid white;*/
+    margin-left: -125px;
+}
+
+.gmail{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.twitter{
+    width: 30px;
+    height: 30px;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font: serif;
+    padding-bottom: 10px;
+}
+
+button{
+    background: none;
+}

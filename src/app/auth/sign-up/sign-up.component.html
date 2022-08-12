@@ -1,0 +1,21 @@
+<div class="header">
+  <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
+</div>
+<div class="container1">
+  <div>
+    <form [formGroup]="signup">
+      <h2>Sign-up</h2>
+      <p>Please fill this form to create an account</p>
+      <input type="text" class="firstname" placeholder="Firstname" formControlName="firstname" /><br /><br />
+      <input type="text" class="lastname" placeholder="Lastname" formControlName="lastname" /><br /><br />
+      <input type="email" class="email" placeholder="E-mail" formControlName="email" /><br /><br />
+      <input type="password" class="password" placeholder="Password" formControlName="password" /><br /><br />
+      <br />
+      <input (click)="signupSubmit()" [disabled]="signup.invalid" type="submit" class="submit" value="SIGN UP" />
+    </form>
+    <p class="extra">Already have an account? <span class="login" (click)="goToLogin()">Log in!</span></p>
+  </div>
+  <div>
+    <img class="signupimg" src="../../assets/Images/sign-upagain.png" alt="signup" />
+  </div>
+</div>
