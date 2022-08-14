@@ -22,8 +22,6 @@ export class AccountComponent implements OnInit {
   }
 
   goToHome() {
-    localStorage.removeItem('user');
-
     this.router.navigate(['homepage']);
   }
 

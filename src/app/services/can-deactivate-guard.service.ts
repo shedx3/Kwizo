@@ -6,16 +6,15 @@ import {
   UrlTree,
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { CreateQuizComponent } from '../pages/create-quiz/create-quiz.component';
 
-@Injectable({
-  providedIn: 'root',
-})
+export interface iDeactivateComponent {
+  canExit: () => Observable<boolean> | Promise<boolean> | boolean;
+}
 export class CanDeactivateGuardService
-  implements CanDeactivate<CreateQuizComponent>
+  implements CanDeactivate<iDeactivateComponent>
 {
   canDeactivate(
-    component: CreateQuizComponent,
+    component: iDeactivateComponent,
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
     nextState?: RouterStateSnapshot
