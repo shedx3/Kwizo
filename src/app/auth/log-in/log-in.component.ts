@@ -35,18 +35,16 @@ export class LogInComponent implements OnInit {
 
   loginSubmit() {
     this.authService.getUsers().subscribe((res) => {
-      console.log(res);
       const emailMatch = res.find((data: any) => {
         return (
-          data.email === this.login.value.email &&
+          data.email.lowercased === this.login.value.email.lowercased &&
           data.password === this.login.value.password
         );
       });
       console.log(emailMatch);
-
       if (emailMatch) {
         localStorage.setItem('user', JSON.stringify(emailMatch));
-        this.router.navigate(['account']);
+        // this.router.navigate(['account']);
       } else {
         this.invalidemail = true;
       }

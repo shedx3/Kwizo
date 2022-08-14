@@ -3,7 +3,6 @@ import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import Swal from 'sweetalert2';
-// import { noExit } from '../shared/exit.model';
 
 @Component({
   selector: 'app-create-quiz',
@@ -65,9 +64,13 @@ export class CreateQuizComponent implements OnInit {
       this.questionForm.reset();
     }
   }
-  // canDeactivate: () => boolean | Observable<boolean> | Promise<boolean>{
-  //   if(this.optionA){
-
-  //   }
-  // };
+  canExit() {
+    if (this.questionForm.dirty) {
+      return confirm(
+        'You have unsaved changes. Do you really want to discard these changes'
+      );
+    } else {
+      return true;
+    }
+  }
 }

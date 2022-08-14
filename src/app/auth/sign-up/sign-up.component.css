@@ -98,6 +98,10 @@ p {
   margin-top: 5px;
 }
 
+input,
+form {
+  margin-bottom: 25px;
+}
 .login {
   color: blue;
   cursor: pointer;
