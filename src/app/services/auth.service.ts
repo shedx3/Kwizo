@@ -14,6 +14,7 @@ export class AuthService {
   registerUsers(data: any) {
     return this.apiHandler.post('users', data);
   }
+
   getUsersById(id: number) {
     return this.apiHandler.get('users' + '/' + id);
   }

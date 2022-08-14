@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { iDeactivateComponent } from 'src/app/services/can-deactivate-guard.service';
 import Swal from 'sweetalert2';
-// import { noExit } from '../shared/exit.model';
 
 @Component({
   selector: 'app-create-quiz',
   templateUrl: './create-quiz.component.html',
   styleUrls: ['./create-quiz.component.css'],
 })
-export class CreateQuizComponent implements OnInit {
+export class CreateQuizComponent implements OnInit, iDeactivateComponent {
   constructor(private router: Router, private fb: FormBuilder) {}
 
   questionForm = this.fb.group({
@@ -65,9 +65,13 @@ export class CreateQuizComponent implements OnInit {
       this.questionForm.reset();
     }
   }
-  // canDeactivate: () => boolean | Observable<boolean> | Promise<boolean>{
-  //   if(this.optionA){
-
-  //   }
-  // };
+  canExit() {
+    if (this.questionForm.dirty) {
+      return confirm(
+        'You have unsaved changes. Do you really want to discard these changes'
+      );
+    } else {
+      return true;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ExitService } from '../services/exit.service';
+import { CanDeactivateGuardService } from '../services/can-deactivate-guard.service';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AccountComponent } from './account/account.component';
 import { CreateQuizComponent } from './create-quiz/create-quiz.component';
@@ -14,12 +14,15 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/homepage' },
   { path: 'homepage', component: HomepageComponent },
   { path: 'leaderboard', component: LeaderboardComponent },
-  { path: 'account', component: AccountComponent },
+  {
+    path: 'account',
+    component: AccountComponent,
+  },
 
   {
     path: 'createquiz',
     component: CreateQuizComponent,
-    canDeactivate: [ExitService],
+    canDeactivate: [CanDeactivateGuardService],
   },
   { path: 'playdemo', component: PlayDemoComponent },
   { path: 'aboutus', component: AboutusComponent },

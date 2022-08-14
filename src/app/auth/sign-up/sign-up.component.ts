@@ -7,6 +7,7 @@ import {
 } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-up',
@@ -15,6 +16,9 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class SignUpComponent implements OnInit {
   signup: any = FormGroup;
+  error: any = null;
+  existingMail: boolean = false;
+
   constructor(
     private fb: FormBuilder,
     private router: Router,
@@ -34,10 +38,33 @@ export class SignUpComponent implements OnInit {
   }
 
   signupSubmit() {
-    this.authService.registerUsers(this.signup.value).subscribe((res) => {
-      this.router.navigate(['login']);
+    this.authService.getUsers().subscribe((res) => {
+      const emailMatch = res.find((data: any) => {
+        return (
+          data.email.toLowerCase() === this.signup.value.email.toLowerCase()
+        );
+      });
+      // console.log(emailMatch);
+      if (emailMatch) {
+        this.existingMail = true;
+      } else {
+        this.existingMail = false;
 
-      this.signup.reset();
+        this.authService.registerUsers(this.signup.value).subscribe((res) => {
+          Swal.fire({
+            title: 'Your Account has been created successfully!',
+            timer: 2000,
+            width: 400,
+            icon: 'success',
+            showClass: { popup: 'animate__animated animate__fadeInDown' },
+            hideClass: { popup: 'animate__animated animate__fadeOutUp' },
+          });
+          this.signup.reset();
+          setTimeout(() => {
+            this.router.navigate(['login']);
+          }, 2000);
+        });
+      }
     });
   }
 

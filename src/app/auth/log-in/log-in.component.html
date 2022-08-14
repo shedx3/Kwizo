@@ -4,6 +4,7 @@
   </div>
   <div class="container">
     <div>
+
       <form [formGroup]="login">
 
         <div class="text-danger text-center mt-1" *ngIf=" invalidemail">*Invalid username or Password*</div>
@@ -11,9 +12,8 @@
         <p class="uname">E-mail</p>
         <input type="text" class="username" name="username" placeholder="E-mail" formControlName="email" />
         <p class="pword">Password</p>
-        <input type="password" class="password" name="password" placeholder="Password"
-          formControlName="password" /><br />
-        <input (click)="loginSubmit()" [disabled]="login.invalid" class="submit" type="submit" value="LOGIN" /><br />
+        <input type="password" class="password" name="password" placeholder="Password" formControlName="password" />
+        <input (click)="loginSubmit()" [disabled]="login.invalid" class="submit" type="submit" value="LOGIN" />
       </form>
       <p class="extra">Don't have an account? <span class="signup" (click)="goToSignup()">Sign up now!</span></p>
     </div>
