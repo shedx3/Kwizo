@@ -4,19 +4,19 @@
         <img (click)="goToHome()" class="logo" src="../../assets/logo-removebg-preview.png" alt="logo">
 
 
-        <span class="welcome">welcome</span>
+        <span class="welcome"><b>WELCOME</b></span>
         <h4>{{userData.firstname}}</h4>
-        <span>{{userData.email}}</span>
-
+        <span class="mail">{{userData.email}}</span>
+        <br><br>
         <div>
             <li (click)="goToHome()"><a class="hm" href="Home"><img class="icon1"
-                        src="../../assets/Images/homeee-removebg-preview.png" alt="homee" width="25%" height="10%">
+                        src="../../assets/Images/homeee-removebg-preview.png" alt="homee" width="15%" height="5%">
                     Home</a></li>
         </div>
 
         <div class="logout">
             <button class="btn btn-danger" (click)="goToLogin()">
-                Log Out
+                Log out
             </button>
 
         </div>
