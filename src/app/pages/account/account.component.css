@@ -7,6 +7,8 @@
 .logo {
   padding-left: 15px;
   width: 90%;
+  margin-top: -10px;
+  margin-bottom: -20px;
 }
 
 nav {
@@ -18,41 +20,53 @@ ul {
   margin: 0;
   padding: 0;
   background-color: #9e85af;
-  width: 180px;
+  width: 240px;
   height: 100%;
 }
 
 li a {
   display: block;
-  color: white;
-  padding: 20px 16px;
+  color: black;
+  padding: 5px 16px;
   text-decoration: none;
 }
+
+/*li a:hover{
+  background-color:#d8c7e2;
+}*/
+
 .welcome {
-  margin-left: 5px;
-}
-.socials {
-  display: inline-flex;
+  margin-left: 25px;
+  font-family: Georgia;
 }
 
-.twitter {
-  width: 30px;
-  height: 30px;
-  background: none;
+h4{
+  margin-left: 25px;
+  font-family: Georgia;
+}
+
+.mail{
+  margin-left: 25px;
+  font-family: Georgia;
 }
 
 .logout {
   position: absolute;
-  bottom: 10%;
-  margin-left: 50px;
+  bottom: 3%;
+  margin-left: 30px;
 }
 
-.gmail {
-  width: 30px;
-  height: 30px;
+.logout button{
   background: none;
+  color: black;
 }
-/*li a:hover {
+
+.logout button:hover{
+  background-color: rgb(209, 202, 202);
+  color: red;
+}
+
+li a:hover {
     background-color: rgb(209, 202, 202);
     color: #700CB3;
 }
@@ -62,7 +76,7 @@ li a {
     left: 5px;
 }
 
-.icon2 {
+/*.icon2 {
     position: relative;
     left: -5px;
 }
@@ -86,7 +100,7 @@ li a {
 .minicontainer1 {
   width: 25%;
   height: 480px;
-  margin-left: 80px;
+  margin-left: 120px;
 }
 
 .demo {
@@ -120,7 +134,7 @@ li a {
 .minicontainer3 {
   width: 25%;
   height: 480px;
-  margin-right: 80px;
+  margin-right: 40px;
 }
 
 .joinquiz {
