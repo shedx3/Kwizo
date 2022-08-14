@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthGuard } from 'src/app/services/auth.guard';
 
 @Component({
   selector: 'app-account',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 export class AccountComponent implements OnInit {
   userData: any;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private auth: AuthGuard) {}
 
   ngOnInit(): void {
     this.userData = localStorage.getItem('user');
@@ -32,7 +33,7 @@ export class AccountComponent implements OnInit {
   goToPdemo() {
     this.router.navigate(['playdemo']);
   }
-  goToLogin() {
+  logout() {
     localStorage.removeItem('user');
     this.router.navigate(['login']);
   }

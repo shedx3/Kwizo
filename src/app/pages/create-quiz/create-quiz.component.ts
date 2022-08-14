@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { iDeactivateComponent } from 'src/app/services/can-deactivate-guard.service';
+
 import Swal from 'sweetalert2';
 
 @Component({
@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   templateUrl: './create-quiz.component.html',
   styleUrls: ['./create-quiz.component.css'],
 })
-export class CreateQuizComponent implements OnInit, iDeactivateComponent {
+export class CreateQuizComponent implements OnInit {
   constructor(private router: Router, private fb: FormBuilder) {}
 
   questionForm = this.fb.group({

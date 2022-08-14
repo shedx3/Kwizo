@@ -68,9 +68,11 @@ form input:hover {
 }
 
 .password {
+  display: flex;
+  justify-content: space-between;
   width: 300px;
   margin-left: 45px;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-left: 15px;
   border: 1px solid #700cb3;
   border-radius: 6px;
@@ -92,7 +94,7 @@ form input:hover {
 .submit:disabled {
   background-color: gray;
   opacity: 0.9;
-  color: black;
+  color: white;
   cursor: not-allowed;
 }
 
@@ -111,4 +113,19 @@ form input:hover {
 .signup {
   color: blue;
   cursor: pointer;
+}
+
+.fa-solid {
+  margin-top: 3px;
+  cursor: pointer;
+}
+.passw {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+input:focus {
+  outline: none;
 }

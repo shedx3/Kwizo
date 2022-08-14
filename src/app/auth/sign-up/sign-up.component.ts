@@ -18,6 +18,8 @@ export class SignUpComponent implements OnInit {
   signup: any = FormGroup;
   error: any = null;
   existingMail: boolean = false;
+  spinner: boolean = false;
+  showPassword: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -38,8 +40,10 @@ export class SignUpComponent implements OnInit {
   }
 
   signupSubmit() {
+    this.spinner = true;
     this.authService.getUsers().subscribe((res) => {
       const emailMatch = res.find((data: any) => {
+        this.spinner = false;
         return (
           data.email.toLowerCase() === this.signup.value.email.toLowerCase()
         );

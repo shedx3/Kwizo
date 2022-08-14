@@ -5,16 +5,14 @@ import {
   RouterStateSnapshot,
   UrlTree,
 } from '@angular/router';
-import { Observable } from 'rxjs';
 
-export interface iDeactivateComponent {
-  canExit: () => Observable<boolean> | Promise<boolean> | boolean;
-}
+import { CreateQuizComponent } from '../pages/create-quiz/create-quiz.component';
+
 export class CanDeactivateGuardService
-  implements CanDeactivate<iDeactivateComponent>
+  implements CanDeactivate<CreateQuizComponent>
 {
   canDeactivate(
-    component: iDeactivateComponent,
+    component: CreateQuizComponent,
     currentRoute: ActivatedRouteSnapshot,
     currentState: RouterStateSnapshot,
     nextState?: RouterStateSnapshot

@@ -11,12 +11,23 @@
       <div class="text-danger text-center mt-1" *ngIf=" existingMail">*Email already exists*</div>
       <input type="text" class="firstname" placeholder="Firstname" formControlName="firstname" />
       <input type="text" class="lastname" placeholder="Lastname" formControlName="lastname" />
-      <input type="email" class="email" placeholder="E-mail" formControlName="email" /><br>
+      <input type="email" class="email" placeholder="E-mail" formControlName="email" />
 
 
-      <input type="password" class="password" placeholder="Password" formControlName="password" />
+      <div class="password">
+        <input type="{{showPassword?'text': 'password'}}" class="passw " placeholder="Password"
+          formControlName="password" />
+        <i class="fa-solid fa-eye-slash " [ngClass]="{'fa-eye-slash':showPassword, 'fa-eye':!showPassword}"
+          (click)="showPassword = !showPassword"></i>
+      </div>
 
-      <input (click)="signupSubmit()" [disabled]="signup.invalid" type="submit" class="submit" value="SIGN UP" />
+      <button (click)="signupSubmit()" [disabled]="signup.invalid" type="submit" class="submit" value="SIGN UP">
+        <span *ngIf="!spinner ">Sign-up</span>
+        <div class="spinner-border spinner-border-sm" role="status" *ngIf="spinner">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </button>
+
     </form>
     <p class="extra">Already have an account? <span class="login" (click)="goToLogin()">Log in!</span></p>
   </div>

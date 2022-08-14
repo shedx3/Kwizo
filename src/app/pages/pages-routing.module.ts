@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGuard } from '../services/auth.guard';
 import { CanDeactivateGuardService } from '../services/can-deactivate-guard.service';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AccountComponent } from './account/account.component';
@@ -18,11 +19,11 @@ const routes: Routes = [
     path: 'account',
     component: AccountComponent,
   },
-
   {
     path: 'createquiz',
     component: CreateQuizComponent,
     canDeactivate: [CanDeactivateGuardService],
+    canActivate: [AuthGuard],
   },
   { path: 'playdemo', component: PlayDemoComponent },
   { path: 'aboutus', component: AboutusComponent },

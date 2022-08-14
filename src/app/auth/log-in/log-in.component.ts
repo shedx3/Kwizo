@@ -16,6 +16,8 @@ import { AuthService } from 'src/app/services/auth.service';
 export class LogInComponent implements OnInit {
   login: any = FormGroup;
   invalidemail: boolean = false;
+  spinner: boolean = false;
+  showPassword: boolean = false;
 
   constructor(
     private fb: FormBuilder,
@@ -34,7 +36,9 @@ export class LogInComponent implements OnInit {
   }
 
   loginSubmit() {
+    this.spinner = true;
     this.authService.getUsers().subscribe((res) => {
+      this.spinner = false;
       const emailMatch = res.find((data: any) => {
         return (
           data.email.toLowerCase() === this.login.value.email.toLowerCase() &&

@@ -11,9 +11,24 @@
         <h2>Log in</h2>
         <p class="uname">E-mail</p>
         <input type="text" class="username" name="username" placeholder="E-mail" formControlName="email" />
+
         <p class="pword">Password</p>
-        <input type="password" class="password" name="password" placeholder="Password" formControlName="password" />
-        <input (click)="loginSubmit()" [disabled]="login.invalid" class="submit" type="submit" value="LOGIN" />
+        <div class="password">
+          <input type="{{showPassword?'text': 'password'}}" class="passw" name="password" placeholder="Password"
+            formControlName="password" />
+          <i class="fa-solid fa-eye-slash " [ngClass]="{'fa-eye-slash':showPassword, 'fa-eye':!showPassword}"
+            (click)="showPassword = !showPassword"></i>
+        </div>
+        <div>
+
+
+          <button (click)="loginSubmit()" [disabled]="login.invalid" class="submit" type="submit" value="LOGIN">
+            <span *ngIf="!spinner ">Login</span>
+            <div class="spinner-border spinner-border-sm" role="status" *ngIf="spinner">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </button>
+        </div>
       </form>
       <p class="extra">Don't have an account? <span class="signup" (click)="goToSignup()">Sign up now!</span></p>
     </div>
