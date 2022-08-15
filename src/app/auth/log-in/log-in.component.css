@@ -46,6 +46,8 @@ form {
 }
 
 .username {
+  display: flex;
+  justify-content: space-between;
   width: 300px;
   margin-left: 45px;
   padding-top: 10px;
