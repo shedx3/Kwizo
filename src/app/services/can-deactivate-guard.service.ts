@@ -1,9 +1,7 @@
-import { Injectable } from '@angular/core';
 import {
   ActivatedRouteSnapshot,
   CanDeactivate,
   RouterStateSnapshot,
-  UrlTree,
 } from '@angular/router';
 
 import { CreateQuizComponent } from '../pages/create-quiz/create-quiz.component';

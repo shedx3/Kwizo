@@ -13,4 +13,6 @@ export class GlobalsService {
   lastName = this.token.user().lastname;
   email = this.token.user().email;
   password = this.token.user().password;
+
+  emailMatch: any;
 }

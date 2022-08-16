@@ -6,6 +6,8 @@ import {
   Validators,
 } from '@angular/forms';
 import { Router } from '@angular/router';
+import { GlobalsService } from 'src/app/classes/globals.service';
+import { TokenService } from 'src/app/classes/token.service';
 import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
@@ -18,11 +20,13 @@ export class LogInComponent implements OnInit {
   invalidemail: boolean = false;
   spinner: boolean = false;
   showPassword: boolean = false;
+  loggedin: boolean = false;
 
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private token: TokenService
   ) {}
 
   ngOnInit(): void {
@@ -39,13 +43,16 @@ export class LogInComponent implements OnInit {
     this.spinner = true;
     this.authService.getUsers().subscribe((res) => {
       this.spinner = false;
+
       const emailMatch = res.find((data: any) => {
         return (
           data.email.toLowerCase() === this.login.value.email.toLowerCase() &&
           data.password === this.login.value.password
         );
       });
+
       console.log(emailMatch);
+
       if (emailMatch) {
         localStorage.setItem('user', JSON.stringify(emailMatch));
         this.router.navigate(['account']);

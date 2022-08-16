@@ -92,12 +92,15 @@ p {
 
 .submit {
   color: white;
-  background-color: black;
+  background-color: #700cb3;
   margin-left: 60px;
   border-radius: 3px;
   margin-bottom: 18px;
 }
 
+/* .text-danger {
+  height: 1px;
+} */
 .submit:disabled {
   background-color: grey;
   opacity: 0.9;

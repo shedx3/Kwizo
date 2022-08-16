@@ -18,12 +18,13 @@ const routes: Routes = [
   {
     path: 'account',
     component: AccountComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'createquiz',
     component: CreateQuizComponent,
     canDeactivate: [CanDeactivateGuardService],
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
   },
   { path: 'playdemo', component: PlayDemoComponent },
   { path: 'aboutus', component: AboutusComponent },

@@ -3,7 +3,9 @@
   height: 70px;
   border-bottom: 1px solid #700cb3;
 }
-
+.text-danger {
+  height: 0px;
+}
 .logo {
   position: relative;
   top: -20px;

@@ -6,6 +6,7 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { Observable } from 'rxjs';
+import { GlobalsService } from '../classes/globals.service';
 import { TokenService } from '../classes/token.service';
 import { AuthService } from './auth.service';
 
@@ -16,7 +17,8 @@ export class AuthGuard implements CanActivate {
   constructor(
     private authService: AuthService,
     private token: TokenService,
-    private router: Router
+    private router: Router,
+    private globals: GlobalsService
   ) {}
   canActivate(
     route: ActivatedRouteSnapshot,

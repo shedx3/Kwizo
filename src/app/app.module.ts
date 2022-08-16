@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-// import { LoadingComponent } from './loading/loading/loading.component';
+import { CanDeactivateGuardService } from './services/can-deactivate-guard.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [CanDeactivateGuardService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
