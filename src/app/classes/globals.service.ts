@@ -5,14 +5,31 @@ import { TokenService } from './token.service';
   providedIn: 'root',
 })
 export class GlobalsService {
-  constructor(private token: TokenService) {
-    const obj = this;
+  constructor() {
   }
 
-  firstName = this.token.user().firstname;
-  lastName = this.token.user().lastname;
-  email = this.token.user().email;
-  password = this.token.user().password;
 
-  emailMatch: any;
+  firstName = this.user().firstname;
+  lastName = this.user().lastname;
+  email = this.user().email;
+  password = this.user().password;
+
+  public user(): any {
+    if (!localStorage.getItem('users')) {
+      return {
+        firstName: '',
+        lastName: '',
+        email: '',
+        password: '',
+      };
+    } else {
+      const info = localStorage.getItem('users');
+      // @ts-ignore
+      const user = JSON.parse(info);
+      // @ts-ignore
+      return JSON.parse(info);
+    }
+  }
+
+  
 }
