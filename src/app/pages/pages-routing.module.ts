@@ -23,6 +23,7 @@ const routes: Routes = [
   {
     path: 'createquiz',
     component: CreateQuizComponent,
+    canDeactivate: [CanDeactivateGuardService],
     canActivate: [AuthGuard],
   },
   { path: 'playdemo', component: PlayDemoComponent },
