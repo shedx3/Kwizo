@@ -29,7 +29,7 @@ const routes: Routes = [
   { path: 'playdemo', component: PlayDemoComponent },
   { path: 'aboutus', component: AboutusComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'playgame', component: PlaygameComponent },
+  { path: 'playgame', component: PlaygameComponent }
 ];
 
 @NgModule({
