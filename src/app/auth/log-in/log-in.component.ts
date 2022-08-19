@@ -26,7 +26,8 @@ export class LogInComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router,
     private authService: AuthService,
-    private token: TokenService
+    private token: TokenService,
+    private globals: GlobalsService
   ) {}
 
   ngOnInit(): void {
@@ -41,24 +42,41 @@ export class LogInComponent implements OnInit {
 
   loginSubmit() {
     this.spinner = true;
-    this.authService.getUsers().subscribe((res) => {
+    this.authService.getUsers().subscribe((res:any) => {
       this.spinner = false;
 
-      const emailMatch = res.find((data: any) => {
-        return (
-          data.email.toLowerCase() === this.login.value.email.toLowerCase() &&
-          data.password === this.login.value.password
-        );
-      });
+      console.log(res);
 
-      console.log(emailMatch);
+      res.find((user:any) => {
+        if(user.email.toLowerCase() === this.login.value.email.toLowerCase() &&
+        user.password === this.login.value.password){
+        this.token.storeToken(user.token);
+        localStorage.setItem('user', JSON.stringify(user));
 
-      if (emailMatch) {
-        localStorage.setItem('user', JSON.stringify(emailMatch));
         this.router.navigate(['account']);
-      } else {
-        this.invalidemail = true;
-      }
+        } else {
+          this.invalidemail = true;
+        }
+        
+      })
+
+      
+
+      // const emailMatch = res.find((data: any) => {
+      //   return (
+      //     data.email.toLowerCase() === this.login.value.email.toLowerCase() &&
+      //     data.password === this.login.value.password
+      //   );
+      // });
+
+      // console.log(emailMatch);
+
+      // if (emailMatch) {
+      //   localStorage.setItem('user', JSON.stringify(emailMatch));
+      //   this.router.navigate(['account']);
+      // } else {
+      //   this.invalidemail = true;
+      // }
     });
   }
 

@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CanDeactivateGuardService } from './services/can-deactivate-guard.service';
+import { AuthGuard } from './services/auth.guard';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +18,7 @@ import { CanDeactivateGuardService } from './services/can-deactivate-guard.servi
     FormsModule,
     HttpClientModule,
   ],
-  providers: [CanDeactivateGuardService],
+  providers: [AuthGuard, CanDeactivateGuardService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
