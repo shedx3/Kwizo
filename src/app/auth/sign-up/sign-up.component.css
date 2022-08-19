@@ -18,13 +18,13 @@
 form {
   border: 2px solid #700cb3;
   margin-left: 100px;
-  margin-top: 90px;
+  margin-top: 110px;
   width: 430px;
   border-radius: 20px;
 }
 
 h2 {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-left: 60px;
 }
 
@@ -74,6 +74,7 @@ p {
 .fa-solid {
   margin-top: 5px;
   cursor: pointer;
+  margin-right: 5px;
 }
 .passw {
   border: none;
@@ -95,7 +96,7 @@ p {
   background-color: #700cb3;
   margin-left: 60px;
   border-radius: 3px;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
 }
 
 /* .text-danger {
@@ -110,7 +111,7 @@ p {
 
 .extra {
   margin-left: 100px;
-  margin-top: 5px;
+  margin-top: -25px;
 }
 
 input,

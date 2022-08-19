@@ -19,7 +19,7 @@ h2 {
   color: black;
   font-size: 30px;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
   margin-top: 20px;
 }
 
@@ -50,10 +50,10 @@ form {
 .username {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-  margin-left: 45px;
+  width: 320px;
+  margin-left: 35px;
   padding-top: 10px;
-  padding-left: 15px;
+  padding-left: 10px;
   border: 1px solid #700cb3;
   border-radius: 6px;
   font-size: 20px;
@@ -74,13 +74,18 @@ form input:hover {
 .password {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-  margin-left: 45px;
+  width: 320px;
+  margin-left: 35px;
   padding-top: 10px;
-  padding-left: 15px;
+  padding-left: 10px;
   border: 1px solid #700cb3;
   border-radius: 6px;
   font-size: 20px;
+}
+
+.fp{
+  margin-right: 185px;
+  color: #700cb3;
 }
 
 .submit {
@@ -88,7 +93,7 @@ form input:hover {
   color: white;
   font-size: 15px;
   margin-left: 100px;
-  margin-top: 13px;
+  margin-top: -12px;
   border-radius: 6px;
   width: 200px;
   padding-top: 5px;
@@ -122,6 +127,7 @@ form input:hover {
 .fa-solid {
   margin-top: 3px;
   cursor: pointer;
+  margin-right: 5px;
 }
 .passw {
   border: none;
