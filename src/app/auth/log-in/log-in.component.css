@@ -85,7 +85,8 @@ form input:hover {
 
 .fp{
   margin-right: 185px;
-  color: #700cb3;
+  color: blue;
+  cursor: pointer;
 }
 
 .submit {

@@ -19,11 +19,17 @@ export class AuthService {
     return this.apiHandler.get('users' + '/' + id);
   }
 
-  editUser(id: number, data: any) {
+  updateUser(id: number, data: any) {
     return this.apiHandler.put('users' + '/' + id, data);
   }
 
   deleteUsers(id: number) {
     return this.apiHandler.delete('users' + '/' + id);
   }
+  
+  editUser(id:number, data: any) {
+    return this.apiHandler.patch('users' + '/'+ id, data)
+  }
+
+
 }
